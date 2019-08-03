@@ -3,11 +3,16 @@ def nyc_pigeon_organizer(data)
   data.each do |categories, attributes|
     attributes.each do |attribute, names|
       names.each do |name|
-        result[name] = {
-          color: [attribute],
-          gender: [],
-          lives: []
-        }
+        if result[name]
+          result[name][categories].push(attribute)
+        else
+          result[name] = {
+            color: [],
+            gender: [],
+            lives: []
+          }
+        end
+        
       end
     end
   end
