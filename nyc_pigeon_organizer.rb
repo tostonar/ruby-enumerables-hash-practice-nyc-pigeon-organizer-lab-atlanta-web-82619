@@ -17,7 +17,7 @@ def nyc_pigeon_organizer(data)
       attributes.each do |attribute, names|
         names.each do |name|
           if name == bird
-            result[name][categories].push(attribute)
+            result[name][categories].push(attribute.to_s)
           end
         end
       end
