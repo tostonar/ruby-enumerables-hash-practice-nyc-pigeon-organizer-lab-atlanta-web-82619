@@ -4,9 +4,10 @@ def nyc_pigeon_organizer(data)
     attributes.each do |attribute, names|
       names.each do |name|
         result[name] = {
-            color: [],
-            gender: [],
-            lives: []
+          attribute => []
+            # color: [],
+            # gender: [],
+            # lives: []
           }
       end
     end
