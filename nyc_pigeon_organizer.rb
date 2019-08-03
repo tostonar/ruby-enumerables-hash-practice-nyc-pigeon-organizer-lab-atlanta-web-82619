@@ -12,7 +12,7 @@ def nyc_pigeon_organizer(data)
             lives: []
           }
         end
-        
+
       end
     end
   end
